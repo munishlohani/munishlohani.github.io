@@ -1,0 +1,17 @@
+{% comment %} Spotify embed include
+Reads `site.spotify.playlist_id`, `site.spotify.show_on_home` and `site.spotify.height`.
+Usage: put `{% include spotify.liquid %}` in a page (home/about) where you want it to appear.
+{% endcomment %}
+
+{%- if site.spotify and site.spotify.playlist_id and (site.spotify.show_on_home or page.spotify) -%}
+<div class="spotify-embed" style="margin: 1rem 0;">
+  <iframe
+    src="https://open.spotify.com/embed/playlist/{{ site.spotify.playlist_id }}"
+    width="100%"
+    height="{{ site.spotify.height | default: 380 }}"
+    frameborder="0"
+    allowtransparency="true"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+{%- endif -%}
