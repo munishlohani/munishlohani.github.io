@@ -122,8 +122,9 @@ layout: default
 
         <!-- RenderCV Sections - Merge Experience and Volunteer -->
         {% comment %} First, combine Experience and Volunteer entries {% endcomment %}
-        {% assign combined_experience = cv.sections.Experience | concat: cv.sections.Volunteer %}
-        {% if combined_experience.size > 0 %}
+        {% assign experience = cv.sections.Experience | default: empty %}
+        {% assign volunteer = cv.sections.Volunteer | default: empty %}
+        {% assign combined_experience = experience | concat: volunteer %}        {% if combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Experience</h3>
