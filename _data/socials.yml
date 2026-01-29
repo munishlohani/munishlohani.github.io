@@ -5,10 +5,10 @@ cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
 email: munish.lohani@gmail.com # your email address
 inspirehep_id:  # Inspire HEP author ID
 rss_icon: false # comment this line to hide the RSS icon
-scholar_userid:  # your Google Scholar ID
+scholar_userid: om2GJJMAAAAJ  # your Google Scholar ID
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
-  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
-  title: Custom Social
-  url: https://www.alberteinstein.com/
+  logo: https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg # can be png, svg, jpg
+  title: LinkedIn
+  url: https://www.linkedin.com/in/munish-lohani/
