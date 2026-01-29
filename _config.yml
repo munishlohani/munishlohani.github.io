@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Munish Lohani # the website title (if blank, full name will be used instead)
+title:  # the website title (if blank, full name will be used instead)
 first_name: Munish
 middle_name: P.
 last_name: Lohani
@@ -298,7 +298,6 @@ scholar:
   replace_strings: true
   join_strings: true
 
-  details_dir: bibliography
   details_link: Details
 
   query: "@*"
