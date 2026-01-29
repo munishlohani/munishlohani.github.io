@@ -19,7 +19,7 @@ ninja.data = [
   },
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
   {%- for p in sorted_pages -%}
-    {%- if p.nav and p.autogen == null and p.published != false -%}
+    {%- if p.nav and p.autogen == null -%}
       {%- if p.dropdown -%}
         {%- for child in p.children -%}
           {%- unless child.title == 'divider' -%}
@@ -267,7 +267,7 @@ ninja.data = [
           {%- assign social_id = "social-unsplash" -%}
           {%- assign social_title = "Unsplash" -%}
           {%- capture social_url %}"https://unsplash.com/@{{ social[1] }}"{% endcapture -%}
-      {%- endif -%}
+      
         {%- comment -%}
         // check how to add wechat qr code
         {%- when "wechat_qr" -%}
@@ -316,6 +316,7 @@ ninja.data = [
           window.open({{ social_url }}, "_blank");
         },
       },
+    {%- endif -%}
     {%- endfor -%}
   {%- endif -%}
   {%- if site.enable_darkmode -%}
