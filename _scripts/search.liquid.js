@@ -19,10 +19,12 @@ ninja.data = [
   },
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
   {%- for p in sorted_pages -%}
-    {%- if p.nav and p.autogen == null -%}
+    {%- if p.nav and p.autogen == null and p.published != false -%}
       {%- if p.dropdown -%}
         {%- for child in p.children -%}
           {%- unless child.title == 'divider' -%}
+            {%- assign target_child = site.pages | where: "permalink", child.permalink | first -%}
+            {%- if target_child and target_child.published != false -%}
             {
               {%- assign title = child.title | escape | strip -%}
               {%- if child.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = child.permalink -%}{%- endif -%}
@@ -34,6 +36,7 @@ ninja.data = [
                 window.location.href = "{{ url | relative_url }}";
               },
             },
+            {%- endif -%}
           {%- endunless -%}
         {%- endfor -%}
 
@@ -54,6 +57,7 @@ ninja.data = [
   {%- endfor -%}
   {%- if site.posts_in_search -%}
     {%- for post in site.posts -%}
+      {%- if post.published != false -%}
       {
         {%- assign title = post.title | escape | strip -%}
         id: "post-{{ title | slugify }}",
@@ -75,12 +79,14 @@ ninja.data = [
             window.location.href = "{{ post.redirect | relative_url }}";
           {% endif %}
         },
-      },
+        },
+      {%- endif -%}
     {%- endfor -%}
   {%- endif -%}
   {%- for collection in site.collections -%}
     {%- if collection.label != 'posts' and collection.output -%}
       {%- for item in collection.docs -%}
+        {%- if item.published != false -%}
         {
           {%- if item.inline -%}
             {%- assign title = item.content | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
@@ -97,11 +103,13 @@ ninja.data = [
             },
           {%- endunless -%}
         },
+        {%- endif -%}
       {%- endfor -%}
     {%- endif -%}
   {%- endfor -%}
   {%- if site.socials_in_search -%}
     {%- for social in site.data.socials -%}
+      {%- if social[1] -%}
       {%- case social[0] -%}
         {%- when "acm_id" -%}
           {%- assign social_id = "social-acm" -%}
@@ -259,6 +267,7 @@ ninja.data = [
           {%- assign social_id = "social-unsplash" -%}
           {%- assign social_title = "Unsplash" -%}
           {%- capture social_url %}"https://unsplash.com/@{{ social[1] }}"{% endcapture -%}
+      {%- endif -%}
         {%- comment -%}
         // check how to add wechat qr code
         {%- when "wechat_qr" -%}
