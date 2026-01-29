@@ -27,6 +27,6 @@ latest_posts:
 
 {% include spotify.liquid %}
 
-**Hi!!** I'm Munish, a student at [Duke Kunshan University](https://dukekunshan.edu.cn). I'm interested in Computer Science, Mathematics and Economics. Currently, I'm working on RAG agents, developing chat bots, and evaluating agents. 
+**Hi!!** I'm **Munish**, a student at [Duke Kunshan University](https://dukekunshan.edu.cn). I'm interested in Computer Science, Mathematics and Economics. Currently, I'm working on RAG agents, developing chat bots, and evaluating agents. 
 
 Besides academics, I like playing videogames (VALORANT) and also playing guitar.
