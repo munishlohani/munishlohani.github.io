@@ -19,7 +19,7 @@ ninja.data = [
   },
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
   {%- for p in sorted_pages -%}
-    {%- if p.nav and p.autogen == null -%}
+    {%- if p.nav and p.autogen == null and p.published != false -%}
       {%- if p.dropdown -%}
         {%- for child in p.children -%}
           {%- unless child.title == 'divider' -%}
@@ -54,6 +54,7 @@ ninja.data = [
   {%- endfor -%}
   {%- if site.posts_in_search -%}
     {%- for post in site.posts -%}
+      {%- if post.published != false -%}
       {
         {%- assign title = post.title | escape | strip -%}
         id: "post-{{ title | slugify }}",
@@ -76,11 +77,13 @@ ninja.data = [
           {% endif %}
         },
       },
+      {%- endif -%}
     {%- endfor -%}
   {%- endif -%}
   {%- for collection in site.collections -%}
     {%- if collection.label != 'posts' -%}
       {%- for item in collection.docs -%}
+        {%- if item.published != false -%}
         {
           {%- if item.inline -%}
             {%- assign title = item.content | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
@@ -97,11 +100,13 @@ ninja.data = [
             },
           {%- endunless -%}
         },
+        {%- endif -%}
       {%- endfor -%}
     {%- endif -%}
   {%- endfor -%}
   {%- if site.socials_in_search -%}
     {%- for social in site.data.socials -%}
+      {%- if social[1] -%}
       {%- case social[0] -%}
         {%- when "acm_id" -%}
           {%- assign social_id = "social-acm" -%}
@@ -307,6 +312,7 @@ ninja.data = [
           window.open({{ social_url }}, "_blank");
         },
       },
+      {%- endif -%}
     {%- endfor -%}
   {%- endif -%}
   {%- if site.enable_darkmode -%}
