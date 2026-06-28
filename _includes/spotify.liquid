@@ -1,17 +1,17 @@
-{% comment %} Spotify embed include for the navbar dropdown. {% endcomment %}
+{% comment %} Spotify navbar preview. {% endcomment %}
 
-{%- if site.spotify and site.spotify.playlist_id -%}
-  <div class="spotify-navbar-menu">
-    <iframe
-      data-testid="embed-iframe"
-      style="border-radius: 12px"
-      src="https://open.spotify.com/embed/track/{{ site.spotify.playlist_id }}?utm_source=generator&theme=0"
-      width="100%"
-      height="{{ site.spotify.height | default: 152 }}"
-      frameBorder="0"
-      allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-    ></iframe>
+{%- if site.data.spotify and site.data.spotify.embeds and site.data.spotify.embeds.size > 0 -%}
+  <div class="spotify-navbar-item">
+    <button
+      class="spotify-navbar-trigger"
+      type="button"
+      aria-label="Open Spotify jukebox"
+      aria-expanded="false"
+      title="Spotify jukebox"
+    >
+      <i class="fa-brands fa-spotify"></i>
+      <span>jukebox</span>
+    </button>
+    <div class="spotify-navbar-preview" data-spotify-player data-spotify-embeds='{{ site.data.spotify.embeds | jsonify | escape }}'></div>
   </div>
 {%- endif -%}

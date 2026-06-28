@@ -406,11 +406,7 @@ enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
-# Spotify embed configuration
-spotify:
-  playlist_id: "5eZT30V5rwLbsal1MMkOxD" # Spotify track id. Example: 11dFghVXANMlKmJXsNCbNl
-  show_on_home: true # set to true to show Spotify embed on the front page
-  height: 152 # compact iframe height in pixels
+# Spotify embeds are maintained in `_data/spotify.yml`
 
 # -----------------------------------------------------------------------------
 # Library versions

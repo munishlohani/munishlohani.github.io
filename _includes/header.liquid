@@ -24,24 +24,8 @@
         <!-- Social Icons -->
         <div class="navbar-brand social">{% social_links %}</div>
       {% endif %}
-      {% if site.spotify and site.spotify.playlist_id %}
-        <div class="navbar-brand dropdown spotify-navbar">
-          <button
-            class="spotify-navbar__button"
-            type="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            aria-label="Open Spotify jukebox"
-            title="Spotify jukebox"
-          >
-            <i class="fa-brands fa-spotify"></i>
-            <span>jukebox</span>
-          </button>
-          <div class="dropdown-menu spotify-navbar__menu">
-            {% include spotify.liquid %}
-          </div>
-        </div>
+      {% if site.data.spotify and site.data.spotify.embeds and site.data.spotify.embeds.size > 0 %}
+        <div class="navbar-brand spotify-navbar">{% include spotify.liquid %}</div>
       {% endif %}
       <!-- Navbar Toggle -->
       <button

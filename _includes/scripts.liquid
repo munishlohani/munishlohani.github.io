@@ -30,6 +30,10 @@
   <script defer src="{{ '/assets/js/masonry.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
 {% endif %}
 
+{% if site.data.spotify and site.data.spotify.embeds and site.data.spotify.embeds.size > 0 %}
+  <script defer src="{{ '/assets/js/spotify-setup.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+{% endif %}
+
 {% if page.mermaid and page.mermaid.enabled %}
   <!-- Mermaid and D3 -->
   <script
