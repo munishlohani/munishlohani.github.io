@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const t=document.querySelector("[data-spotify-player]");if(!t)return;const e=JSON.parse(t.dataset.spotifyEmbeds||"[]");if(!e.length)return;const n=Math.floor(Math.random()*e.length);t.innerHTML=e[n]});
