@@ -188,3 +188,79 @@
     color: var(--global-hover-color);
   }
 }
+
+.spotify-navbar {
+  margin-right: 0.75rem;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .spotify-navbar__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    color: var(--global-text-color);
+    font-size: 1rem;
+    line-height: 1;
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
+
+    i {
+      font-size: 1.1rem;
+    }
+
+    span {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+  }
+
+  .spotify-navbar__menu {
+    min-width: 340px;
+    padding: 0.75rem;
+    margin-top: 0.65rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.75rem;
+    background-color: var(--global-card-bg-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    .spotify-navbar-menu {
+      width: 100%;
+    }
+
+    .spotify-navbar-menu__label {
+      margin-bottom: 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--global-theme-color);
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      border: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .spotify-navbar {
+    margin-right: 0.5rem;
+
+    .spotify-navbar__button span {
+      display: none;
+    }
+
+    .spotify-navbar__menu {
+      min-width: min(90vw, 340px);
+    }
+  }
+}

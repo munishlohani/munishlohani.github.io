@@ -25,8 +25,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-{% include spotify.liquid %}
-
 Hi! I'm **Munish**, an undergraduate student at [Duke Kunshan University](https://www.dukekunshan.edu.cn/) studying [Applied Mathematics and Computational Sciences with a track in Computer Science](https://ugstudies.dukekunshan.edu.cn/majors/applied-mathematics-and-computational-sciences-with-tracks-in-computer-science-and-mathematics/).
 
 I'm interested in building agentic systems that combine reasoning, retrieval, and learning. My current work focuses on agentic AI and retrieval-augmented generation, where I design, develop, and evaluate systems for more effective information retrieval and reasoning. Outside of research, I enjoy building reliable backend infrastructure for AI applications, and I'm particularly interested in reinforcement learning for sequential decision making and its applications to intelligent systems.
