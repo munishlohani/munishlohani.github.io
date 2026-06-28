@@ -27,6 +27,8 @@ latest_posts:
 
 {% include spotify.liquid %}
 
-**Hi!!** I'm **Munish**, a student at [Duke Kunshan University](https://dukekunshan.edu.cn). I'm interested in Computer Science, Mathematics and Economics. Currently, I'm working on RAG agents, developing chat bots, and evaluating agents. 
+Hi! I'm **Munish**, an undergraduate student at [Duke Kunshan University](https://www.dukekunshan.edu.cn/) studying [Applied Mathematics and Computational Sciences with a track in Computer Science](https://ugstudies.dukekunshan.edu.cn/majors/applied-mathematics-and-computational-sciences-with-tracks-in-computer-science-and-mathematics/).
 
-Besides academics, I like playing videogames (VALORANT) and also playing guitar.
+I'm interested in building agentic systems that combine reasoning, retrieval, and learning. My current work focuses on agentic AI and retrieval-augmented generation, where I design, develop, and evaluate systems for more effective information retrieval and reasoning. Outside of research, I enjoy building reliable backend infrastructure for AI applications, and I'm particularly interested in reinforcement learning for sequential decision making and its applications to intelligent systems.
+
+Outside of academics, I like playing guitar, listening to music and taking [ruminative](https://dictionary.cambridge.org/dictionary/english/ruminative) strolls late night. I also used to be an avid gamer, although now I'm inclined more towards reading books and (occasionally) explore my [philomathic](https://www.merriam-webster.com/dictionary/philomathic) curiosity.
