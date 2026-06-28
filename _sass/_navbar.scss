@@ -222,25 +222,16 @@
   }
 
   .spotify-navbar__menu {
-    min-width: 340px;
-    padding: 0.75rem;
+    min-width: 300px;
+    padding: 0.5rem;
     margin-top: 0.65rem;
     border: 1px solid var(--global-divider-color);
-    border-radius: 0.75rem;
+    border-radius: 0.6rem;
     background-color: var(--global-card-bg-color);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 
     .spotify-navbar-menu {
       width: 100%;
-    }
-
-    .spotify-navbar-menu__label {
-      margin-bottom: 0.5rem;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--global-theme-color);
     }
 
     iframe {
@@ -260,7 +251,7 @@
     }
 
     .spotify-navbar__menu {
-      min-width: min(90vw, 340px);
+      min-width: min(92vw, 300px);
     }
   }
 }

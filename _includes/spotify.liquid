@@ -2,14 +2,16 @@
 
 {%- if site.spotify and site.spotify.playlist_id -%}
   <div class="spotify-navbar-menu">
-    <div class="spotify-navbar-menu__label">jukebox</div>
     <iframe
-      src="https://open.spotify.com/embed/playlist/{{ site.spotify.playlist_id }}"
+      data-testid="embed-iframe"
+      style="border-radius: 12px"
+      src="https://open.spotify.com/embed/track/{{ site.spotify.playlist_id }}?utm_source=generator&theme=0"
       width="100%"
       height="{{ site.spotify.height | default: 152 }}"
-      frameborder="0"
-      allowtransparency="true"
-      allow="encrypted-media"
+      frameBorder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
     ></iframe>
   </div>
 {%- endif -%}

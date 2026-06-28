@@ -408,7 +408,7 @@ enable_video_embedding: false # enables video embedding for bibtex entries. If f
 
 # Spotify embed configuration
 spotify:
-  playlist_id: "0TSynllAnze7KMhv6J7W18" # Spotify playlist id (or album/track id). Example: 37i9dQZF1DXcBWIGoYBM5M
+  playlist_id: "5eZT30V5rwLbsal1MMkOxD" # Spotify track id. Example: 11dFghVXANMlKmJXsNCbNl
   show_on_home: true # set to true to show Spotify embed on the front page
   height: 152 # compact iframe height in pixels
 
