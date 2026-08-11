@@ -77,7 +77,9 @@ layout: default
       </p>
     {% endif %}
     <p class="post-tags">
-      <a href="{{ year | prepend: '/books/' | relative_url }}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</a>
+      {% if year != '' %}
+        <a href="{{ year | prepend: '/books/' | relative_url }}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</a>
+      {% endif %}
       {% if tags != '' %}
         &nbsp;&middot;&nbsp;
         {% for tag in page.tags %}
@@ -127,6 +129,15 @@ layout: default
           <figcaption class="empty-review-caption">
             Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/isbn/{{ page.isbn }}">Open Library</a>.
           </figcaption>
+        {% elsif page.cover_id %}
+          <img
+            class="empty-review-cover"
+            alt="{{ page.title }} cover"
+            src="https://covers.openlibrary.org/b/id/{{ page.cover_id }}-L.jpg?default=false"
+          >
+          <figcaption class="empty-review-caption">
+            Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/">Open Library</a>.
+          </figcaption>
         {% endif %}
       </figure>
       {% assign status = page.status | upcase %}
@@ -149,6 +160,11 @@ layout: default
           <img alt="{{ page.title }} cover" src="https://covers.openlibrary.org/b/isbn/{{ page.isbn }}-L.jpg?default=false">
           <figcaption>
             Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/isbn/{{ page.isbn }}">Open Library</a>.
+          </figcaption>
+        {% elsif page.cover_id %}
+          <img alt="{{ page.title }} cover" src="https://covers.openlibrary.org/b/id/{{ page.cover_id }}-L.jpg?default=false">
+          <figcaption>
+            Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/">Open Library</a>.
           </figcaption>
         {% endif %}
       </figure>

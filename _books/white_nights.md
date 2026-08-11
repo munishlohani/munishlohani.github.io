@@ -1,0 +1,10 @@
+---
+layout: book-review
+title: White Nights
+author: Fyodor Dostoevsky
+olid: OL49273234M
+released: 1848
+status: Finished
+categories: [fiction]
+tags: [classics, russian-literature]
+---

@@ -151,13 +151,17 @@ newsletter:
 
 collections:
   books:
-    output: false
+    output: true
+    permalink: /books/:path/
+    defaults:
+      layout: book-review
   news:
     defaults:
       layout: post
     output: true
   projects:
-    output: false
+    output: true
+    permalink: /projects/:path/
   teachings:
     output: false
 

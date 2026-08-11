@@ -19,8 +19,8 @@ cv:
       - institution: Duke Kunshan University
         location: Kunshan, Suzhou, China
         url: https://www.dukekunshan.edu.cn
-        area: Applied Mathematics and Computer Science
-        studyType: Undergraduate
+        area: Applied Mathematics and Computational Sciences, Computer Science Track
+        studyType: Bachelor of Science
         start_date: 2024
         end_date: 2028
         score: ""
@@ -34,40 +34,94 @@ cv:
         location: Kunshan, Suzhou, China
         start_date: 2025
         end_date: present
-        summary: Worked on backend development of ChatDKU, an agentic RAG for answering queries on university policies. Currently working on evaluation!
-      
+        summary: Backend and infrastructure work on ChatDKU, an agentic RAG assistant for university knowledge — tool serving, long-term memory, and evaluation.
+
       - company: Duke Kunshan University
-        position: Student Researcher, Edge Intelligence Lab
+        position: Research Assistant, Edge Intelligence Lab
         location: Kunshan, Suzhou, China
         start_date: 2025
         end_date: present
-        summary: Literature reviews on search agent, framework upgrade for research, and work on paper writing
+        summary: Benchmarking memory-augmented LLM agents and building evaluation datasets for information-seeking agents.
+
+      - company: Duke Kunshan University
+        position: Core Member, Computer Science Club
+        location: Kunshan, Suzhou, China
+        start_date: 2026
+        end_date: present
+        summary: Organizer for HackDKU, DKU's annual week-long hackathon, and designer for event branding and promotional material.
+
+      - company: Duke Kunshan University
+        position: Designer, Library
+        location: Kunshan, Suzhou, China
+        start_date: 2024
+        end_date: 2024
+        summary: Chief Designer for the library's promotional posters and videos, coordinating design work among student workers.
 
 
 
     Awards:
+      - title: Summer Research Scholar
+        date: 2026
+        awarder: Duke Kunshan University
+        summary: Selected as a Summer Research Scholar for two consecutive years (2025, 2026)
+
       - title: Dean's List
         date: 2025
         awarder: Duke Kunshan University
-        summary: Included on Duke Kunshan University’s Dean’s List for the Fall Term 2025
+        summary: Included on Duke Kunshan University's Dean's List for the Fall Term 2025
 
     Publications:
-      - title: Do LLM Agents Know How to Ground, Recover, and Assess? A Benchmark for Epistemic Competence in Information-Seeking Agents
+      - title: Do LLM Agents Know How to Ground, Recover, and Assess? Evaluating Epistemic Competence in Information-Seeking Agents
         authors:
-          - Jiaqi shao
+          - Jiaqi Shao
           - Yuxiang Lin
-          - Munish P. Lohani
+          - Munish Prasad Lohani
           - Yufeng Miao
           - Bing Luo
-        publisher: ICLR
-        releaseDate: 2025
+        publisher: ICLR 2026 (Poster)
+        releaseDate: 2026
         url: https://arxiv.org/abs/2509.22391
 
     Skills:
-      - name: Computer Science
-        level: Intermediate
-        icon: fa-solid fa-hashtag
-        keywords: "Git, Python, Java, Linux"
+      - name: Languages
+        icon: fa-solid fa-code
+        keywords:
+          - Python
+          - Java
+
+      - name: Libraries and Frameworks
+        icon: fa-solid fa-cubes
+        keywords:
+          - Pandas
+          - NumPy
+          - Seaborn
+          - scikit-learn
+          - LangChain
+          - LangGraph
+          - DSPy
+          - VERL
+          - PyTorch
+          - Flask
+          - Django
+          - FastAPI
+
+      - name: Infrastructure
+        icon: fa-solid fa-server
+        keywords:
+          - Docker
+          - Redis
+          - Celery
+          - Locust
+          - Git
+          - Linux
+
+      - name: Design Tools
+        icon: fa-solid fa-pen-nib
+        keywords:
+          - Adobe Photoshop
+          - Adobe InDesign
+          - Adobe Premiere Pro
+          - Canva
 
     Languages:
       - name: Nepali
