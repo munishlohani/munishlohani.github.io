@@ -49,6 +49,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/animal_farm/";
+            },},{id: "books-circe",
+          title: 'Circe',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/circe/";
             },},{id: "books-crime-and-punishment",
           title: 'Crime and Punishment',
           description: "",
@@ -69,11 +74,51 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/five_feet_apart/";
-            },},{id: "books-harry-potter-series",
-          title: 'Harry Potter (series)',
+            },},{id: "books-harry-potter-and-the-philosopher-39-s-stone",
+          title: 'Harry Potter and the Philosopher&amp;#39;s Stone',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/harry_potter/";
+              window.location.href = "/books/harry_potter_1_philosophers_stone/";
+            },},{id: "books-harry-potter-and-the-chamber-of-secrets",
+          title: 'Harry Potter and the Chamber of Secrets',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/harry_potter_2_chamber_of_secrets/";
+            },},{id: "books-harry-potter-and-the-prisoner-of-azkaban",
+          title: 'Harry Potter and the Prisoner of Azkaban',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/harry_potter_3_prisoner_of_azkaban/";
+            },},{id: "books-harry-potter-and-the-goblet-of-fire",
+          title: 'Harry Potter and the Goblet of Fire',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/harry_potter_4_goblet_of_fire/";
+            },},{id: "books-harry-potter-and-the-order-of-the-phoenix",
+          title: 'Harry Potter and the Order of the Phoenix',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/harry_potter_5_order_of_the_phoenix/";
+            },},{id: "books-harry-potter-and-the-half-blood-prince",
+          title: 'Harry Potter and the Half-Blood Prince',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/harry_potter_6_half_blood_prince/";
+            },},{id: "books-harry-potter-and-the-deathly-hallows",
+          title: 'Harry Potter and the Deathly Hallows',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/harry_potter_7_deathly_hallows/";
+            },},{id: "books-life-of-pi",
+          title: 'Life of Pi',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/life_of_pi/";
+            },},{id: "books-lord-of-the-flies",
+          title: 'Lord of the Flies',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/lord_of_the_flies/";
             },},{id: "books-manual-of-the-warrior-of-light",
           title: 'Manual of the Warrior of Light',
           description: "",
@@ -109,11 +154,21 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_alchemist/";
+            },},{id: "books-the-catcher-in-the-rye",
+          title: 'The Catcher in the Rye',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_catcher_in_the_rye/";
             },},{id: "books-the-hobbit",
           title: 'The Hobbit',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_hobbit/";
+            },},{id: "books-the-kite-runner",
+          title: 'The Kite Runner',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_kite_runner/";
             },},{id: "books-the-penelopiad",
           title: 'The Penelopiad',
           description: "",
@@ -129,6 +184,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_zahir/";
+            },},{id: "books-to-kill-a-mockingbird",
+          title: 'To Kill a Mockingbird',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/to_kill_a_mockingbird/";
             },},{id: "books-tuesdays-with-morrie",
           title: 'Tuesdays with Morrie',
           description: "",
