@@ -54,16 +54,31 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/crime_and_punishment/";
+            },},{id: "books-elon-musk",
+          title: 'Elon Musk',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/elon_musk/";
             },},{id: "books-fahrenheit-451",
           title: 'Fahrenheit 451',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/fahrenheit_451/";
+            },},{id: "books-five-feet-apart",
+          title: 'Five Feet Apart',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/five_feet_apart/";
             },},{id: "books-harry-potter-series",
           title: 'Harry Potter (series)',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/harry_potter/";
+            },},{id: "books-manual-of-the-warrior-of-light",
+          title: 'Manual of the Warrior of Light',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/manual_of_the_warrior_of_light/";
             },},{id: "books-1984",
           title: '1984',
           description: "",
@@ -74,11 +89,26 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/notes_from_underground/";
+            },},{id: "books-steve-jobs",
+          title: 'Steve Jobs',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/steve_jobs/";
             },},{id: "books-surely-you-39-re-joking-mr-feynman",
           title: 'Surely You&amp;#39;re Joking, Mr. Feynman!',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/surely_youre_joking_mr_feynman/";
+            },},{id: "books-the-adventures-of-sherlock-holmes",
+          title: 'The Adventures of Sherlock Holmes',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_adventures_of_sherlock_holmes/";
+            },},{id: "books-the-alchemist",
+          title: 'The Alchemist',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_alchemist/";
             },},{id: "books-the-hobbit",
           title: 'The Hobbit',
           description: "",
@@ -94,6 +124,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_song_of_achilles/";
+            },},{id: "books-the-zahir",
+          title: 'The Zahir',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_zahir/";
             },},{id: "books-tuesdays-with-morrie",
           title: 'Tuesdays with Morrie',
           description: "",
