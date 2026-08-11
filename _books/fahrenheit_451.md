@@ -1,6 +1,6 @@
 ---
 layout: book-review
-order: 15
+order: 27
 title: Fahrenheit 451
 author: Ray Bradbury
 olid: OL40236195M

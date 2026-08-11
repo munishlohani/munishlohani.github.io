@@ -1,6 +1,6 @@
 ---
 layout: book-review
-order: 2
+order: 8
 title: The Hobbit
 author: J. R. R. Tolkien
 olid: OL51711263M

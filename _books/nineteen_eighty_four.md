@@ -1,6 +1,6 @@
 ---
 layout: book-review
-order: 14
+order: 26
 title: "1984"
 author: George Orwell
 olid: OL30787529M

@@ -1,10 +1,10 @@
 ---
 layout: book-review
-order: 14
-title: The Song of Achilles
+order: 15
+title: Circe
 author: Madeline Miller
-cover_id: 7098465
-released: 2011
+olid: OL26855753M
+released: 2018
 categories: [fiction]
 tags: [mythology, retellings]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: book-review
-order: 6
+order: 12
 title: Manual of the Warrior of Light
 author: Paulo Coelho
 olid: OL32681495M
