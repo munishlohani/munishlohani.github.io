@@ -23,6 +23,20 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Things I build, mostly around agents, retrieval, and the infrastructure behind them.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-bookshelf",
+          title: "bookshelf",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/books/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "Some information about me",
@@ -30,7 +44,52 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{
+        },{id: "books-crime-and-punishment",
+          title: 'Crime and Punishment',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/crime_and_punishment/";
+            },},{id: "books-harry-potter-series",
+          title: 'Harry Potter (series)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/harry_potter/";
+            },},{id: "books-notes-from-underground",
+          title: 'Notes from Underground',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/notes_from_underground/";
+            },},{id: "books-the-hobbit",
+          title: 'The Hobbit',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_hobbit/";
+            },},{id: "books-the-penelopiad",
+          title: 'The Penelopiad',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_penelopiad/";
+            },},{id: "books-the-song-of-achilles",
+          title: 'The Song of Achilles',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_song_of_achilles/";
+            },},{id: "books-tuesdays-with-morrie",
+          title: 'Tuesdays with Morrie',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/tuesdays_with_morrie/";
+            },},{id: "books-white-nights",
+          title: 'White Nights',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/white_nights/";
+            },},{id: "projects-chatdku",
+          title: 'ChatDKU',
+          description: "An agentic RAG assistant that answers questions about Duke Kunshan University from official sources, with citations.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/chatdku/";
+            },},{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
