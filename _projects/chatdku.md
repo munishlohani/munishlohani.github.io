@@ -4,7 +4,6 @@ title: ChatDKU
 description: An agentic RAG assistant that answers questions about Duke Kunshan University from official sources, with citations.
 importance: 1
 category: work
-related_publications: true
 ---
 
 [ChatDKU](https://chatdku.com) is an agentic AI assistant for Duke Kunshan University: it answers questions about policies, deadlines, courses, bulletins, and handbooks from official university sources, and links back to the material it used. It runs as a university-recognized platform built and maintained by student developers, with stakeholders across Advising, Career Services, Athletics, the Institute of Global Higher Education, and IT.
@@ -36,8 +35,6 @@ A **long-term memory** layer lets the agent persist and retrieve context across 
 ## Evaluation
 
 Shipping a RAG system without measurement is guessing. I built a RAG evaluation platform on top of existing evaluation frameworks to compare LLM choices and pipeline configurations on retrieval quality, sufficiency judgments, and answer accuracy — used both to pick models and to catch regressions as the pipeline changes.
-
-This work connects directly to my research on epistemic competence in information-seeking agents {% cite shao2026llmagentsknowground %} — the question of whether agents know when they have enough evidence is the same question, in a benchmark instead of in production.
 
 ## What's next
 

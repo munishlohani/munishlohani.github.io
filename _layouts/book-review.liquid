@@ -140,10 +140,12 @@ layout: default
           </figcaption>
         {% endif %}
       </figure>
-      {% assign status = page.status | upcase %}
-      <div class="clearfix">
-        <h4>{{ status }}</h4>
-      </div>
+      {% if page.status %}
+        {% assign status = page.status | upcase %}
+        <div class="clearfix">
+          <h4>{{ status }}</h4>
+        </div>
+      {% endif %}
     {% else %}
       <figure>
         {% if page.cover %}
