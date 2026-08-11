@@ -1,5 +1,6 @@
 ---
 layout: book-review
+order: 7
 title: Tuesdays with Morrie
 author: Mitch Albom
 olid: OL36671550M

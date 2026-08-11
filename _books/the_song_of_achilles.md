@@ -1,5 +1,6 @@
 ---
 layout: book-review
+order: 8
 title: The Song of Achilles
 author: Madeline Miller
 cover_id: 7098465

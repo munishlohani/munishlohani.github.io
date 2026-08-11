@@ -6,7 +6,14 @@ layout: page
 {% if page.collection and page.collection.size > 0 %}
   {% assign collection = site[page.collection] %}
   {% if collection and collection.size > 0 %}
-    {% for item in collection reversed %}
+    {% comment %}
+      Books with an `order` in their front matter are shown in that order.
+      Anything without one keeps the collection's default order, at the end.
+    {% endcomment %}
+    {% assign ordered = collection | where_exp: 'item', 'item.order' | sort: 'order' %}
+    {% assign unordered = collection | where_exp: 'item', 'item.order == nil' %}
+    {% assign shelf = ordered | concat: unordered %}
+    {% for item in shelf %}
       {% assign current_year = item.started | date: '%Y' %}
       {% if current_year != year %}
         {% unless forloop.first %}

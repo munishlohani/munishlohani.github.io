@@ -29,4 +29,4 @@ latest_posts:
 
 I'm interested in building agentic systems that combine reasoning, retrieval, and learning. My current work focuses on agentic AI and retrieval-augmented generation, where I design, develop, and evaluate systems for more effective information retrieval and reasoning. Outside of research, I enjoy building reliable backend infrastructure for AI applications, and I'm particularly interested in reinforcement learning for sequential decision making and its applications to intelligent systems.
 
-Outside of academics, I like playing guitar, listening to music and taking [ruminative](https://dictionary.cambridge.org/dictionary/english/ruminative) strolls late night. I also enjoy gaming (FPS), reading books and (occasionally) exploring my [philomathic](https://www.merriam-webster.com/dictionary/philomathic) curiosity.
+Outside of academics, I like playing guitar, listening to music, solving sudoku and taking [ruminative](https://dictionary.cambridge.org/dictionary/english/ruminative) strolls late night. I also enjoy gaming (FPS), reading books and (occasionally) exploring my [philomathic](https://www.merriam-webster.com/dictionary/philomathic) curiosity.
