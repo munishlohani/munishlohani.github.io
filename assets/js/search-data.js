@@ -44,21 +44,41 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "books-crime-and-punishment",
+        },{id: "books-animal-farm",
+          title: 'Animal Farm',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/animal_farm/";
+            },},{id: "books-crime-and-punishment",
           title: 'Crime and Punishment',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/crime_and_punishment/";
+            },},{id: "books-fahrenheit-451",
+          title: 'Fahrenheit 451',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/fahrenheit_451/";
             },},{id: "books-harry-potter-series",
           title: 'Harry Potter (series)',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/harry_potter/";
+            },},{id: "books-1984",
+          title: '1984',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/nineteen_eighty_four/";
             },},{id: "books-notes-from-underground",
           title: 'Notes from Underground',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/notes_from_underground/";
+            },},{id: "books-surely-you-39-re-joking-mr-feynman",
+          title: 'Surely You&amp;#39;re Joking, Mr. Feynman!',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/surely_youre_joking_mr_feynman/";
             },},{id: "books-the-hobbit",
           title: 'The Hobbit',
           description: "",
