@@ -30,7 +30,7 @@ I joined this project as a [Summer Research Scholar](https://ugstudies.dukekunsh
 </div>
 <div class="caption">A course question resolved against the curriculum: the agent identifies the right course for the major track, then lays out the syllabus from the source material. Each answer collects a helpful / not-helpful signal that feeds back into evaluation.</div>
 
-While backend deployment remained my core task, I also moved into the core agent functionality. One of the first tasks we did was backend decoupling — the agent was served separately from the core Django backend. This allowed simultaneous development on both ends, without the two conflicting with one another. To achieve this, we used [FastAPI](https://fastapi.tiangolo.com/) to wrap around the agent, and connected the two backends using `http` requests. To keep requests unique, we used random IDs to create a chatId between chat tasks. This also allowed us to directly stream responses using SSE, and to enable intermediate streaming using [redis](https://redis.io/).
+While backend deployment remained my core task, I also moved into the core agent functionality. One of the first tasks we did was backend decoupling -- the agent was served separately from the core Django backend. This allowed simultaneous development on both ends, without the two conflicting with one another. To achieve this, we used [FastAPI](https://fastapi.tiangolo.com/) to wrap around the agent, and connected the two backends using `http` requests. To keep requests unique, we used random IDs to create a chatId between chat tasks. This also allowed us to directly stream responses using SSE, and to enable intermediate streaming using [redis](https://redis.io/).
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
@@ -47,7 +47,7 @@ In addition to this tool server, I also contributed towards long term memory, an
 
 ## Evaluation
 
-I built a RAG evaluation platform on top of existing evaluation frameworks to compare LLM choices and pipeline configurations on retrieval quality, sufficiency judgments, and answer accuracy — used both to pick models and to catch regressions as the pipeline changes. 
+I built a RAG evaluation platform on top of existing evaluation frameworks to compare LLM choices and pipeline configurations on retrieval quality, sufficiency judgments, and answer accuracy. 
 
 
 <div class="mt-4">
@@ -57,3 +57,7 @@ I built a RAG evaluation platform on top of existing evaluation frameworks to co
 <div class="mt-4">
   <a class="btn btn-sm z-depth-0" role="button" href="https://chatdku.dukekunshan.edu.cn" target="_blank" rel="noopener">Visit chatdku.dukekunshan.edu.cn [DKU network only]</a>
 </div>
+
+</br>
+
+**Note:** *Em dashes in this post is entirely Human Generated*
